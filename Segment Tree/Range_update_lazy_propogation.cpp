@@ -88,6 +88,11 @@ void lazy_update(ll index, ll left, ll right, ll Q_left, ll Q_right, ll val, ll 
 
 
 int main(){
+    
+    ios_base::sync_with_stdio(false);
+	cin.tie(0);
+	cout.tie(0);
+
     ll A[5]={0};
     ll Tree[20]={0}, Lazy[20]={0};
     buildTree(0,0,4,Tree,A);
