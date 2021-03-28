@@ -4,6 +4,7 @@ using namespace std;
 #define ll                  long long
 #define fo(i,n)             for(ll i=0;i<n;i++)
 #define fo_vector(i,G)      for (auto& i : G)
+#define INF (ll)10e9
 
 void buildTree(ll index, ll left, ll right, ll Tree[], ll arr[]){
 
@@ -22,7 +23,7 @@ void buildTree(ll index, ll left, ll right, ll Tree[], ll arr[]){
 ll query(ll index, ll left, ll right, ll Q_left, ll Q_right, ll Tree[]){
 
     if (Q_left>right || Q_right<left ) 
-        return 20;        // suitable according to property
+        return INF;        // suitable according to property
     if (left>=Q_left && Q_right>=right){
         return Tree[index];
     }
