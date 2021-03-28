@@ -27,8 +27,8 @@ ll lazy_query(ll index, ll left, ll right, ll Q_left, ll Q_right, ll Tree[], ll 
         Tree[index]+=Lazy[index]*(right-left+1);
         
         if (right!=left){
-            Lazy[2*index+1] = Lazy[index];
-            Lazy[2*index+2] = Lazy[index];
+            Lazy[2*index+1] += Lazy[index];
+            Lazy[2*index+2] += Lazy[index];
         }
         Lazy[index] = 0;
 
