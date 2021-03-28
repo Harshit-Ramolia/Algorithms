@@ -1,1 +1,3 @@
-# Graph-Algorithms
+# Algorithms
+
+Repositry for code segments of algorithms
